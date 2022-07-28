@@ -20,3 +20,8 @@ let pokemonList = [
 		types: ['grass' , 'poison']}
 ];
 
+//create for loop that iterates for Pokemons name and height
+
+for (let i = 0; i < pokemonList.length; i++) {
+	document.write(pokemonList[i].name + " (Height: " + pokemonList[i].height + ") ")}
+	
