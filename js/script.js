@@ -1,3 +1,4 @@
+let pokemonRepository = (function () {
 let pokemonList = [
 	{	name: 'Venusaur', 
 		height: 2,
@@ -20,13 +21,34 @@ let pokemonList = [
 		types: ['grass' , 'poison']}
 ];
 
-//create for loop that iterates for Pokemons name and weight
+//getAll and add function
 
-for (let i = 0; i < pokemonList.length; i++) { //conditionals added for weight
-	if (pokemonList[i].weight > 40) { //If Pokemon weighs over 40 declares wow thats big
-		document.write('<p>' + pokemonList[i].name + ' (weight: ' + pokemonList[i].weight + ') - Wow, that\'s big!')
-	} else if (pokemonList[i].weight <= 40 && pokemonList[i].weight > 20) { //If Pokemon is between 20 and 40 declares thats a decent size
-		document.write('<p>' + pokemonList[i].name + ' (weight: ' + pokemonList[i].weight + ') - That\'s a decent size.')
-	} else	if (pokemonList[i].weight < 20) { //if Pokemon weighs under 20 declares awe thats tiny
-		document.write('<p>' + pokemonList[i].name + ' (weight: ' + pokemonList[i].weight + ') - Awe, that\'s tiny!')
-	}}
+function getAll() {
+        return pokemonList;
+    }
+
+function add(pokemon) {
+        pokemonList.push(pokemon);
+    }
+
+    return {
+        getAll: getAll,
+        add: add
+    }
+})();
+
+//create forEach function that iterates for Pokemons name and weight
+
+let pokemonList = pokemonRepository.getAll();
+
+pokemonList.forEach(function(pokemon) {
+    if (pokemon.weight>40) {
+        document.write('<p>' + pokemon.name + ', weight: ' + pokemon.weight + ' - Wow, that\'s a big Pokemon!' + '</p>')
+    } else {
+        document.write('<p>' + pokemon.name + ', weight: ' + pokemon.weight + ' - Awe, that\'s a small Pokemon!' + '</p>')
+    }
+
+});
+
+
+
