@@ -1,8 +1,24 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 2.5;
-  background-color: #2b026f;
-  color: #ffffff;
+  background-color: #ff7f50;
+  color: #000000;
+  text-align: center;
+  box-align: center;
+  border:  none;
+  color:  #ffffff;
+  padding: 20px 40px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin:  auto;
+  cursor: pointer;
+  color: #000000;
+  border:  2px solid #030245;
 }
+
+
+
+

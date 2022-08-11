@@ -21,24 +21,35 @@ let pokemonList = [
 		types: ['grass' , 'poison']}
 ];
 
-//getAll and add function
+
+//getAll and add function with object passed BONUS
+
+
+function add (pokemon){
+  
+  if (typeof pokemon == "object") {
+    if ( ("name" in pokemon) && 
+         ("weight" in pokemon) && 
+         ("types" in pokemon) && 
+         ("height" in pokemon) )
+    	{
+       		pokemonList.push (pokemon);
+    	}
+      
+    }
+  }
 
 function getAll() {
         return pokemonList;
     }
-
-function add(pokemon) {
-        pokemonList.push(pokemon);
-    }
-
-    return {
+    
+return {
         getAll: getAll,
         add: add
     }
 })();
 
 //create forEach function that iterates for Pokemons name and weight
-
 let pokemonList = pokemonRepository.getAll();
 
 pokemonList.forEach(function(pokemon) {
@@ -49,6 +60,3 @@ pokemonList.forEach(function(pokemon) {
     }
 
 });
-
-
-
