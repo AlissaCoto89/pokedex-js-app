@@ -23,12 +23,12 @@ let pokemonList = [
 
 
 //getAll and add function with object passed BONUS
-function add (pokemon){
-  if (typeof pokemon == "object") {
-    if ( ("name" in pokemon) && 
-         ("weight" in pokemon) && 
-         ("types" in pokemon) && 
-         ("height" in pokemon) )
+function add(pokemon){
+  if (typeOf pokemon === 'object') {
+    if ( ('name' in pokemon) && 
+         ('height' in pokemon) && 
+         ('weight' in pokemon) && 
+         ('types' in pokemon) )
     {
        pokemonList.push (pokemon);
     }
@@ -45,14 +45,13 @@ return {
         add: add
     }
 })();
-let pokemonList = pokemonRepository.getAll();
-
-pokemonList.forEach(function addListItem(pokemon) {  
+pokemonRepository.getAll().forEach(function(pokemon){
+  
    let pokemonList = document.querySelector('ul');  
    let listItem = document.createElement('li');
-   let button = document.createElement('button')
+   let button = document.createElement('button');
    button.innerText = pokemon.name;
-   button.classList.add("pokemonButton");
-   pokemonItem.appendChild(pokemonButton);  
+   button.classList.add('button');
+   listItem.appendChild(button);  
    pokemonList.appendChild(listItem);
-
+};
