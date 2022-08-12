@@ -32,10 +32,12 @@ h1 {
   border: none;
   display: inline-block;
   font-family: inherit;
+  font-size: 16px;
   background-color: #000000;
   color: #ffffff;
   cursor: pointer;
   padding: 15px;
+  transition-duration: 0.4s;
   
 }
 
