@@ -24,7 +24,7 @@ let pokemonList = [
 
 //getAll and add function with object passed BONUS
 function add(pokemon){
-  if (typeOf pokemon === 'object') {
+  if (typeof pokemon === 'object') {
     if ( ('name' in pokemon) && 
          ('height' in pokemon) && 
          ('weight' in pokemon) && 
@@ -55,5 +55,5 @@ pokemonRepository.getAll().forEach(function(pokemon){
    button.innerText = pokemon.name;
    button.classList.add('button');
    listItem.appendChild(button);  
-   pokemonList.appendChild(listItem);
-};
+   pokemonList.appendChild(listItem)
+});
