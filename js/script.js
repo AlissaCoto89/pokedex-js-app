@@ -23,18 +23,15 @@ let pokemonList = [
 
 
 //getAll and add function with object passed BONUS
-
-
 function add (pokemon){
-  
   if (typeof pokemon == "object") {
     if ( ("name" in pokemon) && 
          ("weight" in pokemon) && 
          ("types" in pokemon) && 
          ("height" in pokemon) )
-    	{
-       		pokemonList.push (pokemon);
-    	}
+    {
+       pokemonList.push (pokemon);
+    }
       
     }
   }
@@ -48,15 +45,14 @@ return {
         add: add
     }
 })();
-
-//create forEach function that iterates for Pokemons name and weight
 let pokemonList = pokemonRepository.getAll();
 
-pokemonList.forEach(function(pokemon) {
-    if (pokemon.weight>40) {
-        document.write('<p>' + pokemon.name + ', weight: ' + pokemon.weight + ' - Wow, that\'s a big Pokemon!' + '</p>')
-    } else {
-        document.write('<p>' + pokemon.name + ', weight: ' + pokemon.weight + ' - Awe, that\'s a small Pokemon!' + '</p>')
-    }
+pokemonList.forEach(function addListItem(pokemon) {  
+   let pokemonList = document.querySelector('ul');  
+   let listItem = document.createElement('li');
+   let button = document.createElement('button')
+   button.innerText = pokemon.name;
+   button.classList.add("pokemonButton");
+   pokemonItem.appendChild(pokemonButton);  
+   pokemonList.appendChild(listItem);
 
-});
