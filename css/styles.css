@@ -10,7 +10,8 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-family: 'Copperplate', fantasy;
+  font-size: 50px;
   font-weight: 700;
 }
 
