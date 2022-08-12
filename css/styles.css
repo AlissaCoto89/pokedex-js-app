@@ -18,7 +18,7 @@ h1 {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
