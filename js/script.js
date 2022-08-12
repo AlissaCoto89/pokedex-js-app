@@ -45,6 +45,8 @@ return {
         add: add
     }
 })();
+
+
 pokemonRepository.getAll().forEach(function(pokemon){
   
    let pokemonList = document.querySelector('ul');  
