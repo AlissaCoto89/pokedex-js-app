@@ -6,30 +6,38 @@ body {
   background-color: #ff7f50;
   color: #000000;
   text-align: center;
-  box-align: center;
-  border:  none;
-  color:  #ffffff;
-  padding: 20px 40px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 22px;
-  margin:  auto;
-  cursor: pointer;
-  border:  2px solid #030245;
-  
 
 }
 
-.button-class {
-  background-color: #d2b48c;
-  border:  none;
-  color:  #000000;
-  padding: 20px 40px;
-  text-align:  center;
-  text-decoration: none;
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+
+.page-header__item {
+  flex: 0 1 100px;
+}
+
+
+.button {
+  border: none;
   display: inline-block;
-  font-size: 22px;
-
-
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
 
 
