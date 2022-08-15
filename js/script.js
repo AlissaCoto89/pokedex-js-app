@@ -41,7 +41,7 @@ function getAll() {
 }
 
 function showDetails(pokemon) {
-	console.log(pokemonRepository.add({	name: 'Venusaur', height: 2, weight: 100, types: ['grass' , 'poison']}));
+	console.log(pokemon);
 }
 
 function addListItem(pokemon) {
@@ -52,7 +52,7 @@ function addListItem(pokemon) {
 	button.classList.add('button');
 	listItem.appendChild(button);  
 	pokemonList.appendChild(listItem)
-	button.addEventListener('click', function(event){showDetails(pokemon)});
+	button.addEventListener('click', function(){showDetails(pokemon)});
 };
     
 return {
