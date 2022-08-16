@@ -58,6 +58,7 @@ ul {
   overflow: auto;
   display: none;
   text-align: center;
+  cursor: pointer;
 }
 
 
@@ -79,7 +80,7 @@ ul {
   background: none;
   color: #777777;
   text-decoration: underline;
-  cursor: pointer;
+  cursor:  pointer;
 }
 
 .modal h1 {
