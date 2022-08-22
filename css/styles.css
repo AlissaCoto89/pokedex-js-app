@@ -68,6 +68,11 @@ body {
   margin-top: 0;
 }
 
+.modal h2 {
+  margin-top: 0;
+  font-family: "Copperplate", fantasy;
+}
+
 .modal p {
   margin-bottom: 0;
 }
