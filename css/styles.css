@@ -17,6 +17,7 @@ body {
 
 .page-header__item {
   flex: 0 1 100px;
+  align: center;
 }
 
 .button-class {
