@@ -5,14 +5,4 @@ This is a web application with HTML, CSS, and JavaScript that loads 150 Pokemon 
 
 
 
-Key learnings:
-JavaScript
-DOM Interaction
-Asynchronous Behavior
-API Integration
-Modals
-Polyfills
-fetch
-IIFE
-JQuery
-Bootstrap
+Key learnings: JavaScript, DOM Interaction, JQuery, Bootstrap, Asynchronous Behavior, API Integration, Modals, Polyfills, fetch, IIFE
