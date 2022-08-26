@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 22px;
   line-height: 2.5;
@@ -25,13 +29,31 @@ body {
   cursor: pointer;
 }
 
+.pokemonButton:hover {
+  color: #ffe800;
+  box-shadow: #ffe800 0 0 0 3px, transparent 0 0 0 0;
+}
+
 .list-group {
-  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.list-group > li {
+  display: flex;
+  flex: 0 0 30%;
+  flex: 0 0 0%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal h1 {
   margin-top: 0;
-  font-family: 'Copperplate', fantasy;
+  font-family: "Copperplate", fantasy;
 }
 
 .modal p {
