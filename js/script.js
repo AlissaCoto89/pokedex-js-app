@@ -2,7 +2,7 @@ let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
   //let modalContainer = document.querySelector("#modal-container"); old modal
-  //Modal
+  let searchField = document.querySelector("#pokedex-search");
   function showModal(pokemon) {
     let modalBody = $(".modal-body");
     let modalTitle = $(".modal-title");
@@ -10,7 +10,7 @@ let pokemonRepository = (function () {
     modalTitle.empty();
     modalBody.empty();
     //declare Name, image, height, weight, type, and abilities
-    let nameElement = $("<h3>" + pokemon.name + "</h3>");
+    let nameElement = $("<h2>" + pokemon.name + "</h2>");
     let imageElement = $('<img class="pokemon-img">');
     imageElement.attr("src", pokemon.imageUrl);
     let heightElement = $("<p>" + "Height: " + pokemon.height + "</p>");
@@ -35,6 +35,20 @@ let pokemonRepository = (function () {
     if (e.key === "Escape" && modalContainer.classList.contains("show-modal")) {
       hideModal();
     }
+  });
+
+  searchField.addEventListener("input", function () {
+    let pokeList = document.querySelectorAll(".pokemonButton");
+    let filterValue = searchField.value.toUpperCase();
+
+    pokeList.forEach(function (pokemon) {
+      console.log(pokemon.innerText);
+      if (pokemon.innerText.toUpperCase().indexOf(filterValue) > -1) {
+        pokemon.style.display = "";
+      } else {
+        pokemon.style.display = "none";
+      }
+    });
   });
 
   function add(pokemon) {
