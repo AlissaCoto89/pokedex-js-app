@@ -59,3 +59,7 @@ body {
 .modal p {
   margin-bottom: 0;
 }
+
+.pokemon-img {
+  width: 200px;
+}

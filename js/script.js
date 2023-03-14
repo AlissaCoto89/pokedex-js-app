@@ -44,7 +44,7 @@ let pokemonRepository = (function () {
     pokeList.forEach(function (pokemon) {
       console.log(pokemon.innerText);
       if (pokemon.innerText.toUpperCase().indexOf(filterValue) > -1) {
-        pokemon.style.display = "";
+        pokemon.style.display = "inline-block";
       } else {
         pokemon.style.display = "none";
       }
