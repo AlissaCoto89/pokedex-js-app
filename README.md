@@ -13,5 +13,6 @@ The following technologies are used:
 ## Application Link
 https://alissacoto89.github.io/pokedex-js-app/
 
-![pokedex](https://user-images.githubusercontent.com/109038162/225138708-2440fd25-b5e9-4f40-bc26-d196c9266227.png)
-![pokedexModal](https://user-images.githubusercontent.com/109038162/225138724-1084916e-67f0-4faa-a5cf-23cb4a47b468.png)
+![pokedex](https://user-images.githubusercontent.com/109038162/231580563-3bc2ef5d-b607-4a51-920d-45b7bedaeed6.png)
+![pokedexModal](https://user-images.githubusercontent.com/109038162/231580587-fea575d9-7b05-471e-abd0-ae337749f28f.png)
+
